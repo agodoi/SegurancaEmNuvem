@@ -21,11 +21,14 @@ Aqui está uma descrição mais detalhada do modelo de responsabilidade comparti
 1. **Responsabilidade da AWS (Provedor de Serviços em Nuvem):**
    - A AWS é responsável pela segurança da infraestrutura da nuvem. Isso inclui os data centers, servidores, redes, armazenamento e a virtualização subjacente que suportam seus serviços;
    - A AWS também é responsável por garantir que seus serviços básicos estejam protegidos e operando de forma segura. Isso inclui serviços como Amazon EC2 (computação em nuvem), Amazon S3 (armazenamento em nuvem) e Amazon RDS (banco de dados relacional);
-   - A AWS fornece medidas de segurança física, como controles de acesso físico aos data centers, sistemas de detecção de intrusões e proteção contra falhas de hardware.
+   - A AWS fornece medidas de segurança física, como controles de acesso físico aos data centers, sistemas de detecção de intrusões e proteção contra falhas de hardware;
+   - Desativação de hardware
 
 2. **Responsabilidade do Cliente:**
-   - Os clientes da AWS são responsáveis por configurar e proteger suas próprias aplicações, sistemas operacionais, dados e rede.
-   - Isso inclui a configuração adequada de firewalls, acesso a servidores e aplicações, gerenciamento de identidade e acesso, e a implementação de práticas de segurança adequadas.
+   - Os clientes da AWS são responsáveis por configurar e proteger suas próprias aplicações, sistemas operacionais, dados e rede, senhas;
+   - Isso inclui a configuração adequada de firewalls, detector de instrusos, acesso a servidores e aplicações, gerenciamento de identidade e acesso, e a implementação de práticas de segurança adequadas;
+   - Configurações de sub-redes;
+   - Criptografia de dados;
    - Os clientes também são responsáveis por manter seus sistemas operacionais e aplicativos atualizados com patches de segurança.
    - A AWS fornece ferramentas e serviços que os clientes podem usar para fortalecer sua segurança, como grupos de segurança, IAM (Identity and Access Management), AWS WAF (Web Application Firewall) e muito mais.
 
@@ -33,3 +36,35 @@ Aqui está uma descrição mais detalhada do modelo de responsabilidade comparti
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/responsaCompartilhada.png">
    <img alt="Região e Zonas AWS" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/responsaCompartilhada.png)">
 </picture>
+
+Portanto, a AWS possui as seguintes obrigações: infraestrutura física que contém seus recursos de segurança física:
+
+- Acesso local super controlado
+- Câmeras de segurança para detecção de instrusos
+- Alarmes de segurança
+- Portas automáticas
+- Biometria para vários níveis de autenticação
+
+
+Uma instância EC2 de um cliente é totalmente isolado de outro cliente. Assim tem-se:
+
+- Isolamento de ataques
+- Isolamento lógico dos dados
+- Porém, não há 100% isolamneto físico entre as máquinas, pois elas podem ser compartilhadas fisicamente, mas isoladas logicamente.
+
+
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/watch?v=zDAYZU4A3w0"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+
+
+
+
+
