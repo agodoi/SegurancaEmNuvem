@@ -53,16 +53,7 @@ Uma instância EC2 de um cliente é totalmente isolado de outro cliente. Assim t
 - Porém, não há 100% isolamneto físico entre as máquinas, pois elas podem ser compartilhadas fisicamente, mas isoladas logicamente.
 
 
-<iframe
-    width="640"
-    height="480"
-    src="https://www.youtube.com/watch?v=zDAYZU4A3w0"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
-
+### [Acesse esse vídeo](www.youtube.com/watch?v=zDAYZU4A3w0)
 
 
 
