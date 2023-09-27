@@ -56,6 +56,11 @@ Uma instância EC2 de um cliente é totalmente isolado de outro cliente. Assim t
 ### [Acesse esse vídeo](www.youtube.com/watch?v=zDAYZU4A3w0)
 Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Google.
 
+### Dicas importantes:
+
+Quando você trabalha no PaaS, você não precisa se preocupar com a infraestrutura EC2 ou EBS ou VPC e sim, com serviços Lambda, RDS ou Beanstalk. 
+
+A infra é amplamente invisível e gerenciada pelo provedor e o desenvolvedor foca no desenvolvimento do seu código. Por exemplo, para usar um RDS, vc não precisa de preocupar com camada mais baixa, como aplicação de patches, capacidade, softwares de manutenção. Você só precisa armazenar e recuperar dados nos pontos finais
 
 
 
