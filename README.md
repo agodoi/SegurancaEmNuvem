@@ -54,7 +54,7 @@ Uma instância EC2 de um cliente é totalmente isolado de outro cliente. Assim t
 
 
 ### [Acesse esse vídeo](www.youtube.com/watch?v=zDAYZU4A3w0)
-
+Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Google.
 
 
 
