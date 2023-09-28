@@ -76,12 +76,25 @@ A autenticação multifator (MFA) é um processo de login de conta com várias e
    <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/aws_mfa_iam_api_1.png)">
 </picture>
 
-Etapas do MFA:
+### Etapas do MFA:
 
-* O sistema solicita apenas a senha e mais uma identificação. Isso é conhecido como autenticação de dois fatores ou autenticação em duas etapas.
-* Em vez do sistema, a identidade do usuário é verificada por um aplicativo de terceiros, normalmente chamado de autenticador. O usuário insere o código de acesso no autenticador e o aplicativo faz a confirmação do usuário para o sistema.
-* Durante a verificação, o usuário insere informações biométricas mediante a leitura de uma impressão digital, retina ou outra parte do corpo.
-* Talvez o sistema só exija várias autenticações quando você acessá-lo pela primeira vez usando um novo dispositivo. Depois disso, ele lembrará da máquina e solicitará apenas sua senha.
+- O sistema solicita apenas a senha e mais uma identificação. Isso é conhecido como autenticação de dois fatores ou autenticação em duas etapas.
+
+- Em vez do sistema, a identidade do usuário é verificada por um aplicativo de terceiros, normalmente chamado de autenticador. Exemplo:
+
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/MFA-microsoft.png">
+   <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/MFA-microsoft.png)">
+</picture>
+
+
+
+-   O usuário insere o código de acesso no autenticador e o aplicativo faz a confirmação do usuário para o sistema.
+
+- Durante a verificação, o usuário insere informações biométricas mediante a leitura de uma impressão digital, retina ou outra parte do corpo.
+
+- Talvez o sistema só exija várias autenticações quando você acessá-lo pela primeira vez usando um novo dispositivo. Depois disso, ele lembrará da máquina e solicitará apenas sua senha.
 
 
 
