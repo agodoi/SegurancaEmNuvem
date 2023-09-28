@@ -76,9 +76,30 @@ A autenticação multifator (MFA) é um processo de login de conta com várias e
    <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/aws_mfa_iam_api_1.png)">
 </picture>
 
+Etapas do MFA:
+
+* O sistema solicita apenas a senha e mais uma identificação. Isso é conhecido como autenticação de dois fatores ou autenticação em duas etapas.
+* Em vez do sistema, a identidade do usuário é verificada por um aplicativo de terceiros, normalmente chamado de autenticador. O usuário insere o código de acesso no autenticador e o aplicativo faz a confirmação do usuário para o sistema.
+* Durante a verificação, o usuário insere informações biométricas mediante a leitura de uma impressão digital, retina ou outra parte do corpo.
+* Talvez o sistema só exija várias autenticações quando você acessá-lo pela primeira vez usando um novo dispositivo. Depois disso, ele lembrará da máquina e solicitará apenas sua senha.
+
 
 
 ## IAM - Identity and Access Management
 
-Serve para gerenciar recursos da AWS. Um recurso é uma entidade em uma conta AWS: EC2 ou um bucket do S3. Quem pode acessar? Quais recursos pode acessar? Como os recursos podem ser acessados? O IAM é gratuito e está disponível em todas as regiões. Ele autentica e verifica o acesso de usuário, gerencia centralmente o acesso à execução de configuração, encerra recursos
+Serve para gerenciar recursos da AWS. Um recurso é uma entidade em uma conta AWS: EC2 ou um bucket do S3. 
+
+Quem pode acessar? Quais recursos pode acessar? Como os recursos podem ser acessados? 
+
+O IAM é gratuito e está disponível em todas as regiões. Ele autentica e verifica o acesso de usuário, gerencia centralmente o acesso à execução de configuração, encerra recursos.
+
+**No IAM, o nome do usuário nao pode ter espaço**. 
+
+O IAM é organizado em:
+
+- Usuário IAM --> é uma pessoa ou aplicativo que pode se autenticar com uma conta AWS.
+- Grupo IAM --> é um conjunto de usuários IAM que recebem autorização idêntica.
+- Política IAM --> o documento que define quais recursos podem ser acessados e o nível de acesso a cada recurso.
+- Função IAM --> mecanismo útil para concender um conjunto de permissões para fazer solicitações de serviços AWS. Em outras palavras, o usuário assume uma responsabilidade temporária, é como se fosse o SUDO no Linux.
+
 
