@@ -84,8 +84,8 @@ A autenticação multifator (MFA) é um processo de login de conta com várias e
 
 
 <picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/MFA-microsoft.png">
-   <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/MFA-microsoft.png)">
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/MFA-microsoft2.png">
+   <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/MFA-microsoft2.png)">
 </picture>
 
 
