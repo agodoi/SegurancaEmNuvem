@@ -58,9 +58,17 @@ Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Go
 
 ### Dicas importantes:
 
-Quando você trabalha no PaaS, você não precisa se preocupar com a infraestrutura EC2 ou EBS ou VPC e sim, com serviços Lambda, RDS ou Beanstalk. 
+- Quando você trabalha no PaaS, se preocupa com serviços gerenciados pela AWS: Lambda, RDS ou Beanstalk. No PaaS, a AWS gerencia o sistema operacional, aplicação de patches em banco de dados, configuração de firewall e recuperação de desastres. O cliente se concentra no gerenciamento de código ou dados.
 
-A infra é amplamente invisível e gerenciada pelo provedor e o desenvolvedor foca no desenvolvimento do seu código. Por exemplo, para usar um RDS, vc não precisa de preocupar com camada mais baixa, como aplicação de patches, capacidade, softwares de manutenção. Você só precisa armazenar e recuperar dados nos pontos finais
+- Quando você trabalha com IaaS, se preocupa com serviços não gerenciados pela AWS: EC2, EBS e VPC.
 
+- Quando você trabalha com SaaS, se preocupa com serviços como AWS Trusted Advisor, AWS Shield e Amazon Chime, onde os softwares são hospedados de maneira centralizada, licenciado em um modelo de assinatura ou pagamento conforme o uso, acessados por meio de um navegador Web ou um app móvel ou uma API. Os clientes não gerenciam infra que oferece suporte ao serviço.
+
+- A infra é amplamente invisível e gerenciada pelo provedor e o desenvolvedor foca no desenvolvimento do seu código. Por exemplo, para usar um RDS, vc não precisa de preocupar com camada mais baixa, como aplicação de patches, capacidade, softwares de manutenção. Você só precisa armazenar e recuperar dados nos pontos finais.
+
+
+## IAM - Identity and Access Management
+
+Serve para gerenciar recursos da AWS. Um recurso é uma entidade em uma conta AWS: EC2 ou um bucket do S3. Quem pode acessar? Quais recursos pode acessar? Como os recursos podem ser acessados? O IAM é gratuito e está disponível em todas as regiões. Ele autentica e verifica o acesso de usuário, gerencia centralmente o acesso à execução de configuração, encerra recursos
 
 
