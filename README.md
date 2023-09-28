@@ -67,6 +67,10 @@ Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Go
 - A infra é amplamente invisível e gerenciada pelo provedor e o desenvolvedor foca no desenvolvimento do seu código. Por exemplo, para usar um RDS, vc não precisa de preocupar com camada mais baixa, como aplicação de patches, capacidade, softwares de manutenção. Você só precisa armazenar e recuperar dados nos pontos finais.
 
 
+## MFA - Autenticação Multifator
+
+A autenticação multifator (MFA) é um processo de login de conta com várias etapas que obriga o usuário a inserir informações que vão além de uma simples senha. Por exemplo, juntamente com a senha, os usuários podem ser solicitados a inserir um código que foi enviado para o e-mail deles, responder a uma pergunta secreta ou verificar uma impressão digital. Em caso de comprometimento de uma senha do sistema, uma segunda forma de autenticação pode ajudar a impedir o acesso não autorizado à conta.
+
 ## IAM - Identity and Access Management
 
 Serve para gerenciar recursos da AWS. Um recurso é uma entidade em uma conta AWS: EC2 ou um bucket do S3. Quem pode acessar? Quais recursos pode acessar? Como os recursos podem ser acessados? O IAM é gratuito e está disponível em todas as regiões. Ele autentica e verifica o acesso de usuário, gerencia centralmente o acesso à execução de configuração, encerra recursos
