@@ -189,4 +189,127 @@ As políticas predefinidas do IAM incluem políticas de administrador, política
 
 7. **AWSLambda_ReadOnlyAccess:** Esta política concede acesso somente leitura ao AWS Lambda, permitindo visualizar as configurações e o estado das funções de Lambda.
 
-##
+## Exemplo de Política em JSON
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "iam:AddUserToGroup",
+                "iam:UpdateGroup",
+                "iam:UpdateUser",
+                "iam:*LoginProfile",
+                "iam:GenerateCredentialReport",
+                "iam:RemoveUserFromGroup",
+                "iam:List*",
+                "iam:Get*",
+                "CloudFormation:*",
+                "ec2:Get*",
+                "ec2:List*",
+                "ec2:Describe*",
+                "cloudtrail:GetTrailStatus",
+                "cloudtrail:DescribeTrails",
+                "cloudtrail:LookupEvents",
+                "cloudtrail:ListTags",
+                "cloudtrail:ListPublicKeys",
+                "cloudtrail:GetEventSelectors",
+                "s3:ListAllMyBuckets",
+                "s3:GetObject",
+                "s3:GetBucketLocation",
+                "kms:ListAliases",
+                "lambda:ListFunctions"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": "iam:*",
+            "Resource": [
+                "arn:aws:iam::*:user/awsstudent",
+                "arn:aws:iam::*:user/root-qwkl*"
+            ],
+            "Effect": "Deny"
+        },
+        {
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "cloudformation:ListStacks",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeStackResource",
+                "cloudformation:DescribeStackResources"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:*Spot*",
+                "ec2:*ReservedInstances*",
+                "ec2:*Scheduled*",
+                "ec2:*Purchase*",
+                "ec2:EnableFastSnapshotRestores"
+            ],
+            "Resource": "*",
+            "Effect": "Deny",
+            "Sid": "RestrictActions"
+        },
+        {
+            "Condition": {
+                "StringNotEqualsIfExists": {
+                    "ec2:PlacementGroupStrategy": "cluster"
+                },
+                "ForAllValues:StringLikeIfExists": {
+                    "ec2:Tenancy": "default",
+                    "ec2:InstanceType": [
+                        "*.nano",
+                        "*.micro",
+                        "*.small"
+                    ]
+                },
+                "NumericLessThanEqualsIfExists": {
+                    "ec2:VolumeSize": "51"
+                },
+                "StringNotEqualsIgnoreCaseIfExists": {
+                    "ec2:VolumeType": [
+                        "io1",
+                        "st1"
+                    ]
+                },
+                "StringEqualsIfExists": {
+                    "ec2:Owner": "amazon"
+                }
+            },
+            "Action": [
+                "ec2:CreateVolume",
+                "ec2:ModifyVolume",
+                "ec2:ImportVolume",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:ModifyFleet",
+                "ec2:ImportSnapshot",
+                "ec2:ResetInstanceAttribute",
+                "ec2:CreateFleet",
+                "ec2:CreateLaunchTemplateVersion",
+                "ec2:EnableVolumeIO",
+                "ec2:CreateLaunchTemplate",
+                "ec2:ImportInstance",
+                "ec2:ModifyInstanceCreditSpecification",
+                "ec2:ModifyLaunchTemplate",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:RebootInstances",
+                "ec2:RunInstances",
+                "ec2:StartInstances"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "RestrictInstanceActions"
+        }
+    ]
+}
+```
