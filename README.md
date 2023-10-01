@@ -313,3 +313,59 @@ As políticas predefinidas do IAM incluem políticas de administrador, política
     ]
 }
 ```
+
+## Outro Exemplo:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "iam:CreateServiceLinkedRole",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "iam:AWSServiceName": "robomaker.amazonaws.com"
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:*",
+                "cloudformation:*",
+                "ec2:AssociateRouteTable",
+                "ec2:AttachInternetGateway",
+                "ec2:CreateInternetGateway",
+                "ec2:CreateNetworkInterfacePermission",
+                "ec2:CreateRoute",
+                "ec2:CreateRouteTable",
+                "ec2:CreateSecurityGroup",
+                "ec2:CreateSubnet",
+                "ec2:CreateTags",
+                "ec2:CreateVpc",
+                "ec2:DeleteNetworkInterface",
+                "ec2:DeleteSubnet",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "kinesis:*",
+                "kinesisvideo:*",
+                "lex:*",
+                "logs:*",
+                "polly:*",
+                "robomaker:*",
+                "rekognition:*",
+                "s3:*",
+                "sns:*",
+                "iam:passrole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
