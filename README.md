@@ -58,13 +58,11 @@ Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Go
 
 ### Dicas importantes:
 
+- Quando você trabalha com IaaS, se preocupa com serviços não gerenciados pela AWS: EC2, EBS e VPC.
+  
 - Quando você trabalha no PaaS, se preocupa com serviços gerenciados pela AWS: Lambda, RDS ou Beanstalk. No PaaS, a AWS gerencia o sistema operacional, aplicação de patches em banco de dados, configuração de firewall e recuperação de desastres. O cliente se concentra no gerenciamento de código ou dados.
 
-- Quando você trabalha com IaaS, se preocupa com serviços não gerenciados pela AWS: EC2, EBS e VPC.
-
-- Quando você trabalha com SaaS, se preocupa com serviços como AWS Trusted Advisor, AWS Shield e Amazon Chime, onde os softwares são hospedados de maneira centralizada, licenciado em um modelo de assinatura ou pagamento conforme o uso, acessados por meio de um navegador Web ou um app móvel ou uma API. Os clientes não gerenciam infra que oferece suporte ao serviço.
-
-- A infra é amplamente invisível e gerenciada pelo provedor e o desenvolvedor foca no desenvolvimento do seu código. Por exemplo, para usar um RDS, vc não precisa de preocupar com camada mais baixa, como aplicação de patches, capacidade, softwares de manutenção. Você só precisa armazenar e recuperar dados nos pontos finais.
+- Quando você trabalha com SaaS, se preocupa com serviços como AWS Trusted Advisor, AWS Shield e Amazon Chime, onde os softwares são hospedados de maneira centralizada, licenciado em um modelo de assinatura ou pagamento conforme o uso, acessados por meio de um navegador Web ou um app móvel ou uma API. Os clientes não gerenciam infra que oferece suporte ao serviço. A infra é amplamente invisível e gerenciada pelo provedor e o desenvolvedor foca no desenvolvimento do seu código. Por exemplo, para usar um RDS, vc não precisa de preocupar com camada mais baixa, como aplicação de patches, capacidade, softwares de manutenção. Você só precisa armazenar e recuperar dados nos pontos finais.
 
 
 ## MFA - Autenticação Multifator
@@ -100,19 +98,67 @@ A autenticação multifator (MFA) é um processo de login de conta com várias e
 
 ## IAM - Identity and Access Management
 
+É um serviço que desempenha um papel crítico em garantir a segurança e controle sobre a infraestrutura na nuvem AWS.
+
 Serve para gerenciar recursos da AWS. Um recurso é uma entidade em uma conta AWS: EC2 ou um bucket do S3. 
 
-Quem pode acessar? Quais recursos pode acessar? Como os recursos podem ser acessados? 
+Quem pode acessar? Quais recursos podem acessar? Como os recursos podem ser acessados? Exemplo: quem pode ligar ou desligar um EC2?
 
 O IAM é gratuito e está disponível em todas as regiões. Ele autentica e verifica o acesso de usuário, gerencia centralmente o acesso à execução de configuração, encerra recursos.
+
+Algumas prinicipais funcionalidades do IAM, explicados em detalhes:
+
+1. **Usuários, Grupos e Políticas:**
+   - IAM permite criar e gerenciar usuários individuais que podem acessar sua conta AWS.
+   - Você pode agrupar usuários em grupos e atribuir políticas de acesso aos grupos.
+   - **Políticas IAM** definem as permissões que os usuários ou grupos têm para realizar ações em recursos da AWS.
+
+2. **Autenticação:**
+   - IAM suporta autenticação baseada em credenciais, incluindo senha e autenticação multifator (MFA).
+
+3. **Autorização:**
+   - Com políticas IAM, você controla quais ações os usuários podem realizar em recursos específicos da AWS.
+   - As políticas podem ser altamente granulares, permitindo um controle fino sobre o acesso.
+
+4. **Credenciais de Acesso:**
+   - IAM fornece credenciais de acesso temporárias que podem ser usadas por aplicativos, scripts ou serviços para acessar recursos da AWS de forma segura.
+   - Evita o uso de credenciais de longa duração, aumentando a segurança.
+
+5. **Rastreamento e Auditoria:**
+   - IAM registra atividades de usuário e fornece informações detalhadas sobre quem fez o quê e quando.
+   - Isso é vital para fins de conformidade e segurança.
+
+6. **Gerenciamento de Senhas:**
+   - IAM permite a definição de políticas de senha e a rotação automática de senhas para os usuários.
+   - Também suporta a redefinição de senhas e o bloqueio de usuários após várias tentativas de login malsucedidas.
+
+7. **Assumir Funções (Role):**
+   - IAM permite que você crie funções que podem ser assumidas por entidades confiáveis, como serviços AWS ou contas de usuário.
+   - Isso é útil para conceder permissões temporárias a recursos, como instâncias EC2.
+
+8. **Políticas Predefinidas:**
+   - A AWS fornece políticas predefinidas que cobrem muitos casos de uso comuns, facilitando o controle de acesso.
+
+9. **Integração com Serviços AWS:**
+   - IAM está integrado com todos os serviços AWS, o que significa que você pode controlar quem pode acessar, modificar ou excluir recursos em toda a plataforma da AWS.
+
+10. **Integração com Serviços de Diretório:**
+   - IAM pode ser integrado com serviços de diretório, como o AWS Directory Service, para autenticação e autorização centralizadas.
+
+11. **Acesso Condicional:**
+    - Você pode definir políticas de acesso condicional com base em informações como endereços IP, data e hora, e outros atributos, aumentando a segurança.
+
+12. **Uso com Contas AWS Múltiplas:**
+    - IAM pode ser usado para federar o acesso entre contas AWS diferentes, permitindo gerenciar centralmente o acesso em um ambiente multinuvem.
+
 
 **No IAM, o nome do usuário nao pode ter espaço**. 
 
 O IAM é organizado em:
 
-- Usuário IAM --> é uma pessoa ou aplicativo que pode se autenticar com uma conta AWS.
-- Grupo IAM --> é um conjunto de usuários IAM que recebem autorização idêntica.
-- Política IAM --> o documento que define quais recursos podem ser acessados e o nível de acesso a cada recurso.
-- Função IAM --> mecanismo útil para concender um conjunto de permissões para fazer solicitações de serviços AWS. Em outras palavras, o usuário assume uma responsabilidade temporária, é como se fosse o SUDO no Linux.
+- **Usuário IAM** --> é uma pessoa ou aplicativo que pode se autenticar com uma conta AWS.
+- **Grupo IAM** --> é um conjunto de usuários IAM que recebem autorização idêntica.
+- **Política IAM** --> o documento que define quais recursos podem ser acessados e o nível de acesso a cada recurso.
+- **Função IAM** --> mecanismo útil para concender um conjunto de permissões para fazer solicitações de serviços AWS. Em outras palavras, o usuário assume uma responsabilidade temporária, é como se fosse o SUDO no Linux.
 
 
