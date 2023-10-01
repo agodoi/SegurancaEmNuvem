@@ -17,6 +17,8 @@ Assista o vídeo a seguir e escreva 2 fatores de segurança que te chamou a aten
 ## [Acesse esse vídeo](www.youtube.com/watch?v=zDAYZU4A3w0)
 Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Google.
 
+Após o vídeo, vamos discutir os itens de segurança explícitos mostrados no vídeo e os implícitos, mas de forma conceitual.
+
 
 ## Modelo de Responsabilidade Compartilhada da AWS
 
