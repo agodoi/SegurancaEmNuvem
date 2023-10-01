@@ -88,7 +88,7 @@ A autenticação multifator (MFA) é um processo de login de conta com várias e
 
 
 
--   O usuário insere o código de acesso no autenticador e o aplicativo faz a confirmação do usuário para o sistema.
+- O usuário insere o código de acesso no autenticador e o aplicativo faz a confirmação do usuário para o sistema.
 
 - Durante a verificação, o usuário insere informações biométricas mediante a leitura de uma impressão digital, retina ou outra parte do corpo.
 
@@ -143,7 +143,6 @@ Algumas prinicipais funcionalidades do IAM, explicados em detalhes:
    - IAM está integrado com todos os serviços AWS, o que significa que você pode controlar quem pode acessar, modificar ou excluir recursos em toda a plataforma da AWS.
 
 10. **Integração com Serviços de Diretório:**
-   
    - IAM pode ser integrado com serviços de diretório, como o AWS Directory Service, para autenticação e autorização centralizadas.
 
 11. **Acesso Condicional:**
