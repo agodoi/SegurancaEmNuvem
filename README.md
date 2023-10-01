@@ -12,9 +12,9 @@ Neste encontro iremos abordar a proteção de dados na nuvem no contexto de ambi
 ## Atividade 1:
 Assista o vídeo a seguir e escreva 2 fatores de segurança que te chamou a atenção e escreva no post-it. Vamos discutir
 
-[Clique Miro](https://miro.com/welcomeonboard/MENKWDJFUmNDWjdoQ0d0eG45RU1xeDJBdmdsN1dLUVB5SEY5c1NGbnlMT1ZTV3dkQWs0ekxWb2puY284QzVsbHwzNDU4NzY0NTY1NDkwOTcxMTQ4fDI=?share_link_id=181798000725)
+## [Entre no Miro](https://miro.com/welcomeonboard/MENKWDJFUmNDWjdoQ0d0eG45RU1xeDJBdmdsN1dLUVB5SEY5c1NGbnlMT1ZTV3dkQWs0ekxWb2puY284QzVsbHwzNDU4NzY0NTY1NDkwOTcxMTQ4fDI=?share_link_id=181798000725)
 
-### [Acesse esse vídeo](www.youtube.com/watch?v=zDAYZU4A3w0)
+## [Acesse esse vídeo](www.youtube.com/watch?v=zDAYZU4A3w0)
 Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Google.
 
 
