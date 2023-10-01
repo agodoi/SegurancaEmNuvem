@@ -9,6 +9,14 @@ Neste encontro iremos abordar a proteção de dados na nuvem no contexto de ambi
 - Segurança de Sistemas
 - Segurança em nuvem
 
+## Atividade 1:
+Assista o vídeo a seguir e escreva 2 fatores de segurança que te chamou a atenção e escreva no post-it. Vamos discutir
+
+[Clique Miro](https://miro.com/welcomeonboard/MENKWDJFUmNDWjdoQ0d0eG45RU1xeDJBdmdsN1dLUVB5SEY5c1NGbnlMT1ZTV3dkQWs0ekxWb2puY284QzVsbHwzNDU4NzY0NTY1NDkwOTcxMTQ4fDI=?share_link_id=181798000725)
+
+### [Acesse esse vídeo](www.youtube.com/watch?v=zDAYZU4A3w0)
+Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Google.
+
 
 ## Modelo de Responsabilidade Compartilhada da AWS
 
@@ -53,10 +61,7 @@ Uma instância EC2 de um cliente é totalmente isolado de outro cliente. Assim t
 - Porém, não há 100% isolamneto físico entre as máquinas, pois elas podem ser compartilhadas fisicamente, mas isoladas logicamente.
 
 
-### [Acesse esse vídeo](www.youtube.com/watch?v=zDAYZU4A3w0)
-Esse vídeo explica como funciona a segurança de um Data Center, no caso, do Google.
-
-### Dicas importantes:
+## Dicas importantes:
 
 - Quando você trabalha com IaaS, se preocupa com serviços não gerenciados pela AWS: EC2, EBS e VPC.
   
@@ -74,7 +79,7 @@ A autenticação multifator (MFA) é um processo de login de conta com várias e
    <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/aws_mfa_iam_api_1.png)">
 </picture>
 
-### Etapas do MFA:
+## Etapas do MFA:
 
 - O sistema solicita apenas a senha e mais uma identificação. Isso é conhecido como autenticação de dois fatores ou autenticação em duas etapas.
 
@@ -152,7 +157,7 @@ Algumas prinicipais funcionalidades do IAM, explicados em detalhes:
     - IAM pode ser usado para federar o acesso entre contas AWS diferentes, permitindo gerenciar centralmente o acesso em um ambiente multinuvem.
 
 
-**No IAM, o nome do usuário nao pode ter espaço**. 
+**Atenção: o nome do usuário IAM nao pode ter espaço**. 
 
 O IAM é organizado em:
 
@@ -182,3 +187,4 @@ As políticas predefinidas do IAM incluem políticas de administrador, política
 
 7. **AWSLambda_ReadOnlyAccess:** Esta política concede acesso somente leitura ao AWS Lambda, permitindo visualizar as configurações e o estado das funções de Lambda.
 
+##
