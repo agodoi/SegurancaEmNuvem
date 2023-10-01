@@ -202,12 +202,12 @@ Os 3 atributos mais comuns no JSON são:
 Esses 3 atributos principais determinam as permissões concedidas a usuários, grupos e funções dentro da AWS:
 
 1. **Effect (Efeito)**: Este atributo especifica o efeito que a política terá quando associada a um usuário, grupo ou função. Existem dois valores possíveis para o efeito:
-     - "Allow": Permite que a ação especificada seja executada. Se uma política com "Effect" definido como "Allow" for associada a um usuário, ele terá permissão para realizar as ações especificadas na política.
-     - "Deny": Negará explicitamente a permissão para a ação especificada, anulando qualquer permissão "Allow" anterior. Se uma política com "Effect" definido como "Deny" for associada a um usuário, ele não poderá realizar as ações especificadas, mesmo que outras políticas permitam.
+     - `Allow`: Permite que a ação especificada seja executada. Se uma política com `Effect` definido como `Allow` for associada a um usuário, ele terá permissão para realizar as ações especificadas na política.
+     - `Deny`: Negará explicitamente a permissão para a ação especificada, anulando qualquer permissão `Allow` anterior. Se uma política com `Effect` definido como `Deny` for associada a um usuário, ele não poderá realizar as ações especificadas, mesmo que outras políticas permitam.
 
-2. **Action (Ação)**: Este atributo define a ação ou conjunto de ações que a política permite ou nega. As ações são ações específicas que podem ser realizadas nos serviços da AWS. Por exemplo, a ação pode ser "s3:GetObject" para permitir a recuperação de objetos em um bucket do Amazon S3 ou "ec2:StartInstance" para permitir a inicialização de uma instância do Amazon EC2. Você pode listar múltiplas ações em uma única política.
+2. **Action (Ação)**: Este atributo define a ação ou conjunto de ações que a política permite ou nega. As ações são ações específicas que podem ser realizadas nos serviços da AWS. Por exemplo, a ação pode ser `s3:GetObject` para permitir a recuperação de objetos em um bucket do Amazon S3 ou `ec2:StartInstance` para permitir a inicialização de uma instância do Amazon EC2. Você pode listar múltiplas ações em uma única política.
 
-3. **Resource (Recurso)**: Este atributo especifica os recursos ou objetos específicos aos quais a política se aplica. Um recurso pode ser um bucket no Amazon S3, uma instância no Amazon EC2, uma tabela no Amazon DynamoDB, entre outros. Especificar o recurso ajuda a limitar as permissões apenas aos recursos específicos listados. Por exemplo, você pode limitar uma política que concede permissões para "s3:GetObject" apenas a um bucket específico, definindo o recurso como o ARN (Amazon Resource Name) desse bucket.
+3. **Resource (Recurso)**: Este atributo especifica os recursos ou objetos específicos aos quais a política se aplica. Um recurso pode ser um bucket no Amazon S3, uma instância no Amazon EC2, uma tabela no Amazon DynamoDB, entre outros. Especificar o recurso ajuda a limitar as permissões apenas aos recursos específicos listados. Por exemplo, você pode limitar uma política que concede permissões para `s3:GetObject` apenas a um bucket específico, definindo o recurso como o ARN (Amazon Resource Name) desse bucket.
 
 Aqui está um exemplo de uma política IAM em JSON que ilustra esses atributos:
 
