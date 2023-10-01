@@ -408,4 +408,26 @@ Nessa prática, vamos simular a contratação de 3 funcionários de desenvolvime
    <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/pratica_01.png)">
 </picture>
 
+Então, sua tarefa hoje é criar esses 3 usuários com as políticas indicas na figura.
+
+- Como explorar usuários e grupos do IAM pré-criados?
+- Como inspecionar políticas do IAM, conforme aplicadas aos grupos pré-criados?
+- Como adotar um cenário real para adicionar usuários a grupos com recursos específicos habilitados?
+- Como localizar e usar a URL de login do IAM?
+- Como testar os efeitos das políticas no acesso ao serviço?
+
+
+Como se faz isso? Seguindo os passos:
+
+### Lembrando:
+
+**Gerenciar usuários do IAM e seu acesso:** você pode criar usuários e atribuir a eles credenciais de segurança individuais (chaves de acesso, senhas e dispositivos de autenticação multifator). É possível gerenciar permissões para controlar quais operações um usuário pode executar.
+
+**Gerenciar funções do IAM e suas permissões:** uma função do IAM é semelhante a um usuário, já que é uma identidade da AWS com políticas de permissão que determinam o que a identidade pode e não pode fazer na AWS. Porém, a finalidade de uma função é poder ser assumida por qualquer pessoa que necessite dela, e não associada exclusivamente a um único indivíduo.
+
+**Gerenciar usuários federados e suas permissões:** você pode habilitar a federação de identidades para permitir que os usuários existentes na sua empresa acessem o Console de Gerenciamento da AWS, chamem as APIs da AWS e acessem recursos, sem necessidade de criar um usuário do IAM para cada identidade.
+
+
+
+
 # Kahoot
