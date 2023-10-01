@@ -81,7 +81,7 @@ A autenticação multifator (MFA) é um processo de login de conta com várias e
    <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/aws_mfa_iam_api_1.png)">
 </picture>
 
-## Etapas do MFA:
+### Etapas do MFA:
 
 - O sistema solicita apenas a senha e mais uma identificação. Isso é conhecido como autenticação de dois fatores ou autenticação em duas etapas.
 
