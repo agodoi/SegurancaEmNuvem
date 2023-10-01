@@ -109,47 +109,47 @@ O IAM é gratuito e está disponível em todas as regiões. Ele autentica e veri
 Algumas prinicipais funcionalidades do IAM, explicados em detalhes:
 
 1. **Usuários, Grupos e Políticas:**
-   - IAM permite criar e gerenciar usuários individuais que podem acessar sua conta AWS.
-   - Você pode agrupar usuários em grupos e atribuir políticas de acesso aos grupos.
-   - **Políticas IAM** definem as permissões que os usuários ou grupos têm para realizar ações em recursos da AWS.
+    - IAM permite criar e gerenciar usuários individuais que podem acessar sua conta AWS.
+    - Você pode agrupar usuários em grupos e atribuir políticas de acesso aos grupos.
+    - **Políticas IAM** definem as permissões que os usuários ou grupos têm para realizar ações em recursos da AWS.
 
 2. **Autenticação:**
-   - IAM suporta autenticação baseada em credenciais, incluindo senha e autenticação multifator (MFA).
+    - IAM suporta autenticação baseada em credenciais, incluindo senha e autenticação multifator (MFA).
 
 3. **Autorização:**
-   - Com políticas IAM, você controla quais ações os usuários podem realizar em recursos específicos da AWS.
-   - As políticas podem ser altamente granulares, permitindo um controle fino sobre o acesso.
+    - Com políticas IAM, você controla quais ações os usuários podem realizar em recursos específicos da AWS.
+    - As políticas podem ser altamente granulares, permitindo um controle fino sobre o acesso.
 
 4. **Credenciais de Acesso:**
-   - IAM fornece credenciais de acesso temporárias que podem ser usadas por aplicativos, scripts ou serviços para acessar recursos da AWS de forma segura.
-   - Evita o uso de credenciais de longa duração, aumentando a segurança.
+    - IAM fornece credenciais de acesso temporárias que podem ser usadas por aplicativos, scripts ou serviços para acessar recursos da AWS de forma segura.
+    - Evita o uso de credenciais de longa duração, aumentando a segurança.
 
 5. **Rastreamento e Auditoria:**
-   - IAM registra atividades de usuário e fornece informações detalhadas sobre quem fez o quê e quando.
-   - Isso é vital para fins de conformidade e segurança.
+    - IAM registra atividades de usuário e fornece informações detalhadas sobre quem fez o quê e quando.
+    - Isso é vital para fins de conformidade e segurança.
 
 6. **Gerenciamento de Senhas:**
-   - IAM permite a definição de políticas de senha e a rotação automática de senhas para os usuários.
-   - Também suporta a redefinição de senhas e o bloqueio de usuários após várias tentativas de login malsucedidas.
+    - IAM permite a definição de políticas de senha e a rotação automática de senhas para os usuários.
+    - Também suporta a redefinição de senhas e o bloqueio de usuários após várias tentativas de login malsucedidas.
 
 7. **Assumir Funções (Role):**
-   - IAM permite que você crie funções que podem ser assumidas por entidades confiáveis, como serviços AWS ou contas de usuário.
-   - Isso é útil para conceder permissões temporárias a recursos, como instâncias EC2.
+    - IAM permite que você crie funções que podem ser assumidas por entidades confiáveis, como serviços AWS ou contas de usuário.
+    - Isso é útil para conceder permissões temporárias a recursos, como instâncias EC2.
 
 8. **Políticas Predefinidas:**
-   - A AWS fornece políticas predefinidas que cobrem muitos casos de uso comuns, facilitando o controle de acesso.
+    - A AWS fornece políticas predefinidas que cobrem muitos casos de uso comuns, facilitando o controle de acesso.
 
 9. **Integração com Serviços AWS:**
-   - IAM está integrado com todos os serviços AWS, o que significa que você pode controlar quem pode acessar, modificar ou excluir recursos em toda a plataforma da AWS.
+    - IAM está integrado com todos os serviços AWS, o que significa que você pode controlar quem pode acessar, modificar ou excluir recursos em toda a plataforma da AWS.
 
 10. **Integração com Serviços de Diretório:**
-   - IAM pode ser integrado com serviços de diretório, como o AWS Directory Service, para autenticação e autorização centralizadas.
+    - IAM pode ser integrado com serviços de diretório, como o AWS Directory Service, para autenticação e autorização centralizadas.
 
 12. **Acesso Condicional:**
-   - Você pode definir políticas de acesso condicional com base em informações como endereços IP, data e hora, e outros atributos, aumentando a segurança.
+    - Você pode definir políticas de acesso condicional com base em informações como endereços IP, data e hora, e outros atributos, aumentando a segurança.
 
 13. **Uso com Contas AWS Múltiplas:**
-   - IAM pode ser usado para federar o acesso entre contas AWS diferentes, permitindo gerenciar centralmente o acesso em um ambiente multinuvem.
+    - IAM pode ser usado para federar o acesso entre contas AWS diferentes, permitindo gerenciar centralmente o acesso em um ambiente multinuvem.
 
 
 **No IAM, o nome do usuário nao pode ter espaço**. 
