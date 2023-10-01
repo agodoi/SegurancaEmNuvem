@@ -401,6 +401,11 @@ Neste exemplo, a política permite a ação `s3:GetObject` no recurso específic
 ```
 # Prática
 
+Nessa prática, vamos simular a contratação de 3 funcionários de desenvolvimento, e cada um terá uma função na arquitetura de nuvem, conforme mostra a figura a seguir.
 
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/pratica_01.png">
+   <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/pratica_01.png)">
+</picture>
 
 # Kahoot
