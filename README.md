@@ -145,11 +145,11 @@ Algumas prinicipais funcionalidades do IAM, explicados em detalhes:
 10. **Integração com Serviços de Diretório:**
    - IAM pode ser integrado com serviços de diretório, como o AWS Directory Service, para autenticação e autorização centralizadas.
 
-11. **Acesso Condicional:**
-    - Você pode definir políticas de acesso condicional com base em informações como endereços IP, data e hora, e outros atributos, aumentando a segurança.
+12. **Acesso Condicional:**
+   - Você pode definir políticas de acesso condicional com base em informações como endereços IP, data e hora, e outros atributos, aumentando a segurança.
 
-12. **Uso com Contas AWS Múltiplas:**
-    - IAM pode ser usado para federar o acesso entre contas AWS diferentes, permitindo gerenciar centralmente o acesso em um ambiente multinuvem.
+13. **Uso com Contas AWS Múltiplas:**
+   - IAM pode ser usado para federar o acesso entre contas AWS diferentes, permitindo gerenciar centralmente o acesso em um ambiente multinuvem.
 
 
 **No IAM, o nome do usuário nao pode ter espaço**. 
