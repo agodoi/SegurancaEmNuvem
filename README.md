@@ -162,3 +162,23 @@ O IAM é organizado em:
 - **Função IAM** --> mecanismo útil para concender um conjunto de permissões para fazer solicitações de serviços AWS. Em outras palavras, o usuário assume uma responsabilidade temporária, é como se fosse o SUDO no Linux.
 
 
+### Exemplos de Políticas IAM
+
+São mais de 800 políticas prédefinidas disponíveis no IAM, nas quais você pode combiná-las para criar suas próprias políticas personalizadas de acordo com as necessidades específicas da sua organização. 
+
+As políticas predefinidas do IAM incluem políticas de administrador, políticas de apenas leitura, políticas de acesso a recursos específicos, políticas para serviços específicos da AWS, políticas para funções de serviço, entre outras. Aqui estão alguns exemplos de políticas predefinidas comuns:
+
+1. **AdministratorAccess:** Esta política concede acesso completo a todos os recursos e operações da AWS, tornando um usuário um administrador com controle total sobre a conta.
+
+2. **ReadOnlyAccess:** Esta política concede acesso somente leitura a todos os recursos da AWS, permitindo que os usuários visualizem informações, mas não façam alterações.
+
+3. **AmazonS3FullAccess:** Esta política concede acesso total aos serviços de armazenamento Amazon S3, incluindo a capacidade de criar, listar, excluir e modificar objetos no S3.
+
+4. **AmazonEC2FullAccess:** Esta política concede acesso total aos serviços Amazon EC2, permitindo que os usuários criem, gerenciem e excluam instâncias EC2, entre outras operações.
+
+5. **AmazonRDSFullAccess:** Esta política concede acesso total ao Amazon RDS (Relational Database Service) para criar e gerenciar bancos de dados relacionais.
+
+6. **AWSLambda_FullAccess:** Esta política concede acesso total ao AWS Lambda, permitindo a criação, execução e gerenciamento de funções de Lambda.
+
+7. **AWSLambda_ReadOnlyAccess:** Esta política concede acesso somente leitura ao AWS Lambda, permitindo visualizar as configurações e o estado das funções de Lambda.
+
