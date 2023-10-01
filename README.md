@@ -171,7 +171,7 @@ O IAM é organizado em:
 
 ### Exemplos de Políticas IAM
 
-São mais de 800 políticas prédefinidas disponíveis no IAM, nas quais você pode combiná-las para criar suas próprias políticas personalizadas de acordo com as necessidades específicas da sua organização. 
+Seu usuário de laboratório do Learner Lab tem mais de 1000 políticas prédefinidas disponíveis no IAM, nas quais você pode combiná-las para criar suas próprias políticas personalizadas de acordo com as necessidades específicas da sua organização. 
 
 As políticas predefinidas do IAM incluem políticas de administrador, políticas de apenas leitura, políticas de acesso a recursos específicos, políticas para serviços específicos da AWS, políticas para funções de serviço, entre outras. Aqui estão alguns exemplos de políticas predefinidas comuns:
 
@@ -405,7 +405,7 @@ Nessa prática, vamos simular a contratação de 3 funcionários de desenvolvime
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/pratica_01.png">
-   <img alt="MFA" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/pratica_01.png)">
+   <img alt="PraticaIAM" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/pratica_01.png)">
 </picture>
 
 Então, sua tarefa hoje é criar esses 3 usuários com as políticas indicas na figura.
@@ -428,6 +428,22 @@ Como se faz isso? Seguindo os passos:
 **Gerenciar usuários federados e suas permissões:** você pode habilitar a federação de identidades para permitir que os usuários existentes na sua empresa acessem o Console de Gerenciamento da AWS, chamem as APIs da AWS e acessem recursos, sem necessidade de criar um usuário do IAM para cada identidade.
 
 
+# Passo-01:
 
+Nesse passo, vamos levantar alguns dados do seu perfil de usuário do Learner Lab.
+
+a) No menu de opção do console AWS, digite **IAM**, e depois clique em **Grupos de Usuários**. Quantos grupos você está inserido?
+
+b) Clique em **Usuários**, e verifique quantos cadastrados tem no seu perfil.
+
+c) Clique em **Funções**, quantas vocês possui nesse perfil?
+
+d) Clicando em **Políticas**, quantas estão no seu perfil?
+
+e) Clicando em **Provedores de identidade**, quantos você está inserido? Um IdP (Identity Provider). O AWS IAM permite a integração com vários IdPs para habilitar o Single Sign-On (SSO) e simplificar o gerenciamento de identidades e acesso na AWS. Quando um usuário autenticado solicita acesso a recursos da AWS, o IdP pode ser configurado para gerar tokens de acesso temporário que são usados para autenticar o usuário na AWS. Gerenciamento Centralizado de Identidades: Os IdPs são frequentemente usados em ambientes empresariais para centralizar o gerenciamento de identidades. Isso significa que as informações de usuário, políticas de acesso e autenticação são gerenciadas em um único local, tornando mais fácil a adição, remoção e atualização de usuários e permissões.
+
+# Passo-02:
+
+Criar 3 usuários
 
 # Kahoot
