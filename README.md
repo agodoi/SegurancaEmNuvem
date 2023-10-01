@@ -143,6 +143,7 @@ Algumas prinicipais funcionalidades do IAM, explicados em detalhes:
    - IAM está integrado com todos os serviços AWS, o que significa que você pode controlar quem pode acessar, modificar ou excluir recursos em toda a plataforma da AWS.
 
 10. **Integração com Serviços de Diretório:**
+   
    - IAM pode ser integrado com serviços de diretório, como o AWS Directory Service, para autenticação e autorização centralizadas.
 
 11. **Acesso Condicional:**
