@@ -504,6 +504,9 @@ d) Deslogue do **user1**, logue no **user2** e confira se sua política está em
 
 e) Deslogue do **user2**, logue no **user3** e confira se sua política está em X ? que você decidiu no **Passo-05 (c)**.
 
+
+# Conclusão
+
 Portanto, dependendo do ususário que você está conectado, você vai ter alguma dessas permissões:
 
 a) AmazonEC2ReadOnlyAccess + IAMReadOnlyAccess
