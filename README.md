@@ -430,6 +430,8 @@ Como se faz isso? Seguindo os passos:
 
 # Passo-01:
 
+Você precisa entrar no seu curso **AWS Foundation** e não no Learner Lab. Motivo: o Learner Lab não permite mexer no IAM para criar novos usuários.
+
 Nesse passo, vamos levantar alguns dados do seu perfil de usuário do Learner Lab.
 
 a) No menu de opção do console AWS, digite **IAM**, e depois clique em **Grupos de Usuários**. Quantos grupos você está inserido?
