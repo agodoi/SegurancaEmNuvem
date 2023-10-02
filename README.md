@@ -442,8 +442,35 @@ d) Clicando em **Políticas**, quantas estão no seu perfil?
 
 e) Clicando em **Provedores de identidade**, quantos você está inserido? Um IdP (Identity Provider). O AWS IAM permite a integração com vários IdPs para habilitar o Single Sign-On (SSO) e simplificar o gerenciamento de identidades e acesso na AWS. Quando um usuário autenticado solicita acesso a recursos da AWS, o IdP pode ser configurado para gerar tokens de acesso temporário que são usados para autenticar o usuário na AWS. Gerenciamento Centralizado de Identidades: Os IdPs são frequentemente usados em ambientes empresariais para centralizar o gerenciamento de identidades. Isso significa que as informações de usuário, políticas de acesso e autenticação são gerenciadas em um único local, tornando mais fácil a adição, remoção e atualização de usuários e permissões.
 
-# Passo-02:
+# Passo-02: criando o grupo EC2-Support
 
-Criar 3 usuários
+a) Carregue o serviço **IAM**.
+
+b) No menu vertical da esquerda, clique em **Grupos** e crie um grupo chamado **EC2-Support**.
+
+c) Clique na guia **Permissões** e adicione a permissão **AmazonEC2ReadOnlyAccess** e **IAMReadOnlyAccess**. Isso significa que esse grupo terá uma política gerenciada associada a ele, chamada **AmazonEC2ReadOnlyAccess + IAMReadOnlyAccess**. As políticas gerenciadas são políticas criadas previamente (pela AWS ou por seus administradores) que podem ser associadas a usuários e grupos do IAM. Quando a política é atualizada, as alterações à política são imediatamente aplicadas a todos os usuários e grupos associados a ela.
+
+d) Confirme a criação desse Grupo;
+
+e) Volte em **Permissões** e confira a política criada. Uma política define quais ações são permitidas ou negadas para recursos específicos da AWS. Esta política concede permissão para listar e descrever informações sobre EC2, Elastic Load Balancing, CloudWatch e Auto Scaling. **Essa capacidade é para visualizar recursos, mas não os modificar, é ideal para atribuir a uma função de suporte**.
+
+# Passo-03: criando grupo S3-Support
+
+a) No painel de navegação à esquerda, clique em **Grupos**.
+
+b) E crie outro grupo chamado **S3-Support** e adicione a política **AmazonS3ReadOnlyAccess** e **IAMReadOnlyAccess** e confirme. Essa política tem permissões para obter e listar recursos no Amazon S3.
+
+# Passo-04: criando grupo EC2-Admin
+
+a) Novamente, no painel de navegação à esquerda, clique em **Grupos** e crie o 3º grupo chamado **EC2-Admin**. 
+
+b) Associe a esse grupo uma política capaz de conceder permissão para visualizar (Descrever) informações sobre o Amazon EC2 e permite também iniciar e interromper instâncias + **IAMReadOnlyAccess**. Procure a permissão que melhor faça isso e confirme a criação. 
+
+# Passo-05: Confirme os grupos criados
+
+- EC2-Support → política AmazonEC2ReadOnlyAccess + IAMReadOnlyAccess
+- S3-Support → política AmazonS3ReadOnlyAccess + IAMReadOnlyAccess
+- EC2-Admin → X ? Vc é quem vai decidir + IAMReadOnlyAccess
+
 
 # Kahoot
