@@ -47,7 +47,7 @@ Aqui está uma descrição mais detalhada do modelo de responsabilidade comparti
    <img alt="Região e Zonas AWS" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SegurancaEmNuvem/blob/main/imgs/responsaCompartilhada.png)">
 </picture>
 
-Portanto, a AWS possui as seguintes obrigações: infraestrutura física que contém seus recursos de segurança física:
+Portanto, a AWS possui as seguintes obrigações: infraestrutura física que contém seus recursos de segurança física e isso você pode amarrar ao vídeo que assitiu:
 
 - Acesso local super controlado
 - Câmeras de segurança para detecção de instrusos
@@ -399,7 +399,25 @@ Neste exemplo, a política permite a ação `s3:GetObject` no recurso específic
     ]
 }
 ```
-# Prática
+# Prática 01
+
+Nessa prática, vamos entender o seu perfil de aluno no **Learner Lab**. Então, faça o login nele, e responda:
+
+a) No menu de opção do console AWS, digite **IAM**, e depois clique em **Grupos de Usuários**. Quantos grupos você está inserido?
+
+b) Clique em **Usuários**, e verifique quantos cadastrados tem no seu perfil.
+
+c) Clique em **Funções**, quantas vocês possui nesse perfil?
+
+d) Clicando em **Políticas**, quantas estão no seu perfil?
+
+e) Clicando em **Provedores de identidade**, quantos você está inserido? Um IdP (Identity Provider). O AWS IAM permite a integração com vários IdPs para habilitar o Single Sign-On (SSO) e simplificar o gerenciamento de identidades e acesso na AWS. Quando um usuário autenticado solicita acesso a recursos da AWS, o IdP pode ser configurado para gerar tokens de acesso temporário que são usados para autenticar o usuário na AWS. Gerenciamento Centralizado de Identidades: Os IdPs são frequentemente usados em ambientes empresariais para centralizar o gerenciamento de identidades. Isso significa que as informações de usuário, políticas de acesso e autenticação são gerenciadas em um único local, tornando mais fácil a adição, remoção e atualização de usuários e permissões.
+
+# Prática 02
+
+Você precisa entrar no **Módulo 4** do seu curso **AWS Foundation** e carregar o **Laborotório 1 - Introdução ao IAM**. 
+
+Motivo: o Learner Lab não permite mexer no IAM para criar novos usuários.
 
 Nessa prática, vamos simular a contratação de 3 funcionários de desenvolvimento, e cada um terá uma função na arquitetura de nuvem, conforme mostra a figura a seguir.
 
@@ -417,7 +435,7 @@ Então, sua tarefa hoje é criar esses 3 usuários com as políticas indicas na 
 - Como testar os efeitos das políticas no acesso ao serviço?
 
 
-Como se faz isso? Seguindo os passos:
+Como se faz isso? Seguindo os passos abaixo...
 
 ### Lembrando:
 
@@ -429,8 +447,6 @@ Como se faz isso? Seguindo os passos:
 
 
 # Passo-01:
-
-Você precisa entrar no seu curso **AWS Foundation** e não no Learner Lab. Motivo: o Learner Lab não permite mexer no IAM para criar novos usuários.
 
 Nesse passo, vamos levantar alguns dados do seu perfil de usuário do Learner Lab.
 
