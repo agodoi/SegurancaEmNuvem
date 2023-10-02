@@ -468,9 +468,42 @@ b) Associe a esse grupo uma política capaz de conceder permissão para visualiz
 
 # Passo-05: Confirme os grupos criados
 
-- EC2-Support → política AmazonEC2ReadOnlyAccess + IAMReadOnlyAccess
-- S3-Support → política AmazonS3ReadOnlyAccess + IAMReadOnlyAccess
-- EC2-Admin → X ? Vc é quem vai decidir + IAMReadOnlyAccess
+a) EC2-Support → política AmazonEC2ReadOnlyAccess + IAMReadOnlyAccess
+
+b) S3-Support → política AmazonS3ReadOnlyAccess + IAMReadOnlyAccess
+
+c) EC2-Admin → X ? Vc é quem vai decidir + IAMReadOnlyAccess
+
+# Passo-06: criando 3 usuários
+
+a) Ainda no seu perfil root e no serviço IAM, clique em **Usuários**.
+
+b) Crie 3 usuários com os seguintes nomes:
+
+b.1) user1 → sem MFA, coloque a senha estudante@user1 → tome nota do link com 12 dígitos num arquivo TXT a parte
+
+b.2) user2 → sem MFA, coloque a senha estudante@user2 → tome nota do link com 12 dígitos num arquivo TXT a parte
+
+b.3) user3 → sem MFA, coloque a senha estudante@user3 → tome nota do link com 12 dígitos num arquivo TXT a parte
+
+c) Clique em **user1**. Isso levará para uma página de resumo do user1. A guia **Permissões** será exibida. Observe que user1 não tem permissões. Clique na guia **Grupos** e associe o grupo **EC2-Support** ao **user1**.
+
+d) Clique na guia **Grupos** e associe o grupo **S3-Support** ao **user2**.
+
+e) Clique na guia **Grupos** e associe o grupo **EC2-Admin** ao **user3**.
+
+# Passo-07: fazendo testes de segurança
+
+a) Saia do seu perfil root;
+
+b) Abra uma aba ANÔNIMA do seu navegador e na opção usuário IAM, logue com o **user1**
+
+c) Vá em IAM, depois **Usuário** e veja a política dele se está como: **EC2-Support → política AmazonEC2ReadOnlyAccess**
+
+d) Deslogue do **user1**, logue no **user2** e confira se sua política está em **AmazonS3ReadOnlyAccess**
+
+e) Deslogue do **user2**, logue no **user3** e confira se sua política está em X ? que você decidiu no **Passo-05 (c)**.
+
 
 
 # Kahoot
