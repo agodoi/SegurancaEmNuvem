@@ -446,7 +446,7 @@ e) Clicando em **Provedores de identidade**, quantos você está inserido? Um Id
 
 a) Carregue o serviço **IAM**.
 
-b) No menu vertical da esquerda, clique em **Grupos** e crie um grupo chamado **EC2-Support**.
+   b) No menu vertical da esquerda, clique em **Grupos** e crie um grupo chamado **EC2-Support**.
 
 c) Clique na guia **Permissões** e adicione a permissão **AmazonEC2ReadOnlyAccess** e **IAMReadOnlyAccess**. Isso significa que esse grupo terá uma política gerenciada associada a ele, chamada **AmazonEC2ReadOnlyAccess + IAMReadOnlyAccess**. As políticas gerenciadas são políticas criadas previamente (pela AWS ou por seus administradores) que podem ser associadas a usuários e grupos do IAM. Quando a política é atualizada, as alterações à política são imediatamente aplicadas a todos os usuários e grupos associados a ela.
 
@@ -498,11 +498,11 @@ a) Saia do seu perfil root;
 
 b) Abra uma aba ANÔNIMA do seu navegador e na opção usuário IAM, logue com o **user1**
 
-c) Vá em IAM, depois **Usuário** e veja a política dele se está como: **EC2-Support → política AmazonEC2ReadOnlyAccess**
+c) Vá em IAM, depois **Usuário** e veja a política dele se está como: **EC2-Support → política AmazonEC2ReadOnlyAccess**. Tente desligar ou ligar uma instância EC2. Deu certo? Por que?
 
-d) Deslogue do **user1**, logue no **user2** e confira se sua política está em **AmazonS3ReadOnlyAccess**
+d) Deslogue do **user1**, logue no **user2** e confira se sua política está em **AmazonS3ReadOnlyAccess**. Tente criar ou excluir um S3. Deu certo?
 
-e) Deslogue do **user2**, logue no **user3** e confira se sua política está em X ? que você decidiu no **Passo-05 (c)**.
+e) Deslogue do **user2**, logue no **user3** e confira se sua política está em X ? que você decidiu no **Passo-05 (c)**. Tente desligar ou ligar uma instânci EC2. Deu certo? Por que?
 
 
 # Conclusão
