@@ -195,7 +195,7 @@ Os 3 atributos mais comuns no JSON são:
 
 - Effect
 - Action
-- Resouce
+- Resource
 
 ### Detalhando:
 
