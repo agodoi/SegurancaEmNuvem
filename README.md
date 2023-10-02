@@ -492,7 +492,7 @@ d) Clique na guia **Grupos** e associe o grupo **S3-Support** ao **user2**.
 
 e) Clique na guia **Grupos** e associe o grupo **EC2-Admin** ao **user3**.
 
-# Passo-07: fazendo testes de segurança
+# Passo-07: fazendo testes de acesso seguro
 
 a) Saia do seu perfil root;
 
