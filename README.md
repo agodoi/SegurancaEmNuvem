@@ -464,9 +464,9 @@ e) Clicando em **Provedores de identidade**, quantos você está inserido? Um Id
 
 a) Carregue o serviço **IAM**.
 
-   b) No menu vertical da esquerda, clique em **Grupos** e crie um grupo chamado **EC2-Support**.
+b) No menu vertical da esquerda, clique em **Grupos** e crie note que você já tem um grupo chamado **EC2-Support**.
 
-c) Clique na guia **Permissões** e adicione a permissão **AmazonEC2ReadOnlyAccess** e **IAMReadOnlyAccess**. Isso significa que esse grupo terá uma política gerenciada associada a ele, chamada **AmazonEC2ReadOnlyAccess + IAMReadOnlyAccess**. As políticas gerenciadas são políticas criadas previamente (pela AWS ou por seus administradores) que podem ser associadas a usuários e grupos do IAM. Quando a política é atualizada, as alterações à política são imediatamente aplicadas a todos os usuários e grupos associados a ela.
+c) Clique na guia **Permissões** e veja que você tem a permissão **AmazonEC2ReadOnlyAccess** e **IAMReadOnlyAccess**. Isso significa que esse grupo terá uma política gerenciada associada a ele, chamada **AmazonEC2ReadOnlyAccess + IAMReadOnlyAccess**. As políticas gerenciadas são políticas criadas previamente (pela AWS ou por seus administradores) que podem ser associadas a usuários e grupos do IAM. Quando a política é atualizada, as alterações à política são imediatamente aplicadas a todos os usuários e grupos associados a ela.
 
 d) Confirme a criação desse Grupo;
 
